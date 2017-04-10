@@ -1,0 +1,52 @@
+@import "theme/variables";
+
+@import "vendor/font-awesome/font-awesome";
+
+@import "~antd/dist/antd";   // import official less entry file
+@import "vendor/ant/ant-overrides";
+@import "theme/all";
+@import "ant/all";
+
+@import "components/all";
+.App {
+    text-align: center;
+}
+
+.container {
+  margin: 20px;
+}
+
+
+.page-box {
+  border: 1px solid #e9e9e9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  margin: 0 0 16px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+
+    &__sep {
+        background-color: #e9e9e9;
+        color: #e9e9e9;
+        border: 0px;
+        margin: 10px 0px;
+        margin-bottom: 20px;
+        height: 1px;
+    }
+
+    &__buttons {
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-top: 1px solid #e9e9e9;
+
+        button {
+            margin-right: 5px;
+
+        }
+    }
+}

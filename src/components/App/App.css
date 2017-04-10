@@ -1,0 +1,29 @@
+.container {
+  margin: 50px;
+}
+
+.ant-row {
+  margin-bottom: 25px;
+}
+
+label {
+  display: inline-block;
+  text-align: left;
+  width: 125px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.ant-checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-checkbox-group label {
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+.client-list-button button {
+  margin-right: 10px;
+}

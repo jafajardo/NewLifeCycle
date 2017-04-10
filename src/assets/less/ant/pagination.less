@@ -1,0 +1,40 @@
+
+.ant-pagination-prev,
+.ant-pagination-next,
+.ant-pagination-item {
+    border: 0px;
+    border-radius: 2px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+
+    a {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: -2px;
+    }
+}
+
+.ant-pagination-prev,
+.ant-pagination-item {
+    margin-right: 0px !important;
+}
+
+.ant-pagination-prev {
+    a:after {
+        content: '\f104';
+        .fa-icon();
+        margin-top: -3px;
+        font-size: 40px !important;
+    }
+}
+
+.ant-pagination-next {
+    a:after {
+        content: '\f105';
+        margin-top: -3px;
+        
+        .fa-icon();
+        font-size: 40px !important;
+    }
+}

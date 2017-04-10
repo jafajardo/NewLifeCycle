@@ -1,0 +1,103 @@
+.page-header,
+.pageHeader {
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 6px 1px rgba(115, 115, 115, 0.08);
+    border-bottom: 1px solid #e4e4e4;
+    height: 60px;
+    line-height: 60px;
+    color: #000;
+    font-family: 'MuseoSans';
+    font-weight: 500;
+    font-size: 23px;
+    width: 100%;
+    width: ~"calc(100% + 40px)";
+}
+
+.ie9 .page-header {
+    width: 100% !important;
+}
+
+.pageHeader.small {
+    width: 100%;
+    margin: 0px; background: transparent;
+    margin-top: 0px; border: 0px; padding: 0px;
+}
+
+//New version
+.page-header {
+    display: table;
+    width:100%;
+    table-layout: fixed;
+    background-color: white;
+
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+
+    .breadcrumb-sep {
+        color: #e4e4e4;
+    }
+
+    .btn {
+        vertical-align: middle; margin-left: 10px;
+    }
+
+    &__col {
+        display: table-cell; vertical-align: middle;
+        width: 50%; height: 100%;
+        font-size: 23px;
+        padding-left: 25px;
+    }
+
+    &__col.page-header__col--breadcrumbs {
+        text-align: right; font-size: 13px;
+        padding-right: 25px;
+    }
+
+    @media(max-width: @screen-sm-max)
+    {
+        display: block;
+        height: auto;
+
+        &__col {
+            display: block;
+            text-align:center !important;
+            padding: 10px !important;
+            width: 100%;
+            height: auto;
+
+            line-height: 40px;
+
+            &.page-header__col--title {
+                line-height:20px;
+                padding-bottom: 5px !important;
+            }
+
+            &.page-header__col--breadcrumbs {
+                line-height:20px;
+                padding-top: 0px !important;
+            }
+
+            &:first-child {
+                padding-bottom: 0px;
+            }
+
+            &:last-child {
+                padding-top: 0px;
+            }
+        }
+    }
+}
+
+.main-content > form > .page-header,
+.main-content > .page-header,
+.main-content > .pageHeader {
+    margin-top: -6px;
+}
+
+
+.layout-frame .page-header,
+.layout-frame .pageHeader {
+    margin-top: -1px;
+}

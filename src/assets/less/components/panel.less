@@ -1,0 +1,179 @@
+.panel {
+    border: 0px !important;
+    font-family: 'MuseoSans';
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: none !important;
+
+    &--bordered {
+        .panel-body {
+            border: 1px solid #e4e4e4;
+        }
+
+        .panel-heading {
+            color: @colour-orange;
+        }
+    }
+
+
+    &-inner-header {
+        border-bottom: 1px solid #E4E4E4;
+        margin: 10px 0px;
+        padding: 10px 15px; padding-bottom: 20px;
+
+        h2 {
+            margin-bottom: 0px;
+        }
+    }
+
+    .panel-body {
+        font-size: 14px; line-height: 20px;
+
+        p { margin-top: 0px; }
+
+        p:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    > .panel-heading {
+        border: 0px;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 18px;
+        h2 {
+            margin-bottom: 0px;
+        }
+    }
+
+    .panel-body-wrapper {
+        border-radius: 3px;
+        clear:both; position: relative;
+        border: 1px solid #e4e4e4;
+        box-shadow: @default-box-shadow;
+
+        //List Groups
+        > .list-group {
+            margin-bottom: 0px;
+
+            > li:first-child {
+                border-top: 0px;
+            }
+
+            > li {
+                border-left: 0px; border-right: 0px;
+            }
+
+            > li:last-child {
+                border-bottom: 0px;
+            }
+        }
+
+        > table {
+            margin: 0px;
+            border: 0px;
+        }
+    }
+
+    .panel-body-inner {
+        padding: 15px 20px;
+    }
+
+    .panel-dropdown {
+        height: 60px; line-height: 60px;
+        border-bottom: 1px solid #E4E4E4;
+
+        .dropdown > a{
+            display: inline-block;
+            padding: 0px 20px;
+            line-height: 60px; height: 60px;
+
+            //border-right: 1px solid #e4e4e4;
+            font-size: 17px; font-family: 'MuseoSans';
+            font-weight: 500;
+            margin: 0px; border-bottom: 0px;
+        }
+
+        ul.dropdown-menu { margin-top: -4px; }
+    }
+
+    //Orange
+    &--colour-orange {
+        > .panel-heading {
+            color: @colour-orange;
+        }
+
+        .panel-body-wrapper {
+            border-top: 5px solid @colour-orange;
+
+            background-image: url('/images/panels/panel-triangle-orange.png');
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+    }
+
+    //Blue
+    &--colour-blue {
+        > .panel-heading { color: @colour-blue; }
+
+        .panel-body-wrapper {
+            border-top: 5px solid @colour-blue;
+            background-image: url('/images/panels/panel-triangle-blue.png');
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+    }
+
+    //Teal
+    &--colour-teal {
+        > .panel-heading {
+            color: @colour-light-teal;
+        }
+
+        .panel-body-wrapper {
+            border-top: 5px solid @colour-light-teal;
+            background-image: url('/images/panels/panel-triangle-teal.png');
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+    }
+
+    //Pink
+    &--colour-pink {
+        > .panel-heading {
+            color: @colour-pink;
+        }
+
+        .panel-body-wrapper {
+            border-top: 5px solid @colour-pink;
+            background-image: url('/images/panels/panel-triangle-pink.png');
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+    }
+
+    &--no-panel-corner .panel-body-wrapper {
+        background-image: none;
+    }
+
+    /* Responsive
+    /* --------------------- */
+    @media(max-width: @screen-md-max)
+    {
+        &-heading {
+            > .core-icon {
+                display: none;
+            }
+        }
+
+        .panel-dropdown {
+            height: 50px; line-height: 50px;
+            .dropdown > a {
+                font-size: 14px; white-space: nowrap;
+
+                line-height: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
